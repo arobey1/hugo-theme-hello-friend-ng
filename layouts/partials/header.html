@@ -16,8 +16,9 @@
             {{- if .Site.Params.EnableThemeToggle }}
                 <span class="theme-toggle not-selectable">{{ partial "theme-toggle-icon.html" . }}</span>
             {{- end}}
+            {{ if .Params.mathjax}}{{ partial "mathjax_support.html" . }}{{ end }}
+
         </span>
     </span>
 </header>
 
-{{ if .Params.mathjax}}{{ partial "mathjax_support.html" . }}{{ end }}
