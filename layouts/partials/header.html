@@ -19,3 +19,5 @@
         </span>
     </span>
 </header>
+
+{{ if .Params.mathjax}}{{ partial "mathjax_support.html" . }}{{ end }}
