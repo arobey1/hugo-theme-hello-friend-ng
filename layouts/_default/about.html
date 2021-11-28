@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <main aria-role="main" class="posts">
+        <div>
+
+            <article>
+                <h1>{{ .Title }}</h1>
+
+                <hr>
+
+                {{ if .Content }}
+                    <div class="content">{{ .Content }}</div>
+                {{ end }}
+
+            </article>
+
+        </div>
+
+    </main>
+{{ end }}
